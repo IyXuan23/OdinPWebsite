@@ -6,7 +6,7 @@ body {
 }
 
 .headerLinks, .headerLogo, .mainText, .secondaryText, .headerSignUp,
-.infoTitle {
+.infoTitle, .boxText, .quoteText, .quoteName {
     font-family: "Roboto", sans-serif;
 }
 
@@ -111,12 +111,72 @@ a {
     align-items: center;
     justify-content: center;
 
-    margin-top: 32px;
+    padding-top: 32px;
+    padding-left: 320px;
+    padding-right: 320px;
+    padding-bottom: 96px;
 }
 
 .infoTitle{
     font-size: 36px;
     font-weight: 800;
     color: #1F2937;
+
+    white-space: nowrap;
+
+    padding-bottom: 32px;
+}
+
+.infoBoxes {
+    display: flex;
+    gap: 32px;
+}
+
+.box {
+    height: 150px;
+    width: 150px;
+    border: #3882F6 solid 4px;
+
+    border-radius: 8px;
+
+    margin-bottom: 8px;
+}
+
+.boxText {
+    text-align: center;
+    width: 150px;
+}
+
+.quote {
+    background-color: #E5E7EB;
+    
+    padding-left: 320px;
+    padding-right: 320px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quoteText {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    font-weight: 300;
+
+    padding-top: 96px;
+
+    width: 750px;
+}
+
+.quoteName {
+    font-size: 18px;
+    color: #1F2937;
+    font-weight: bold;
+
+    text-align: end;
+    padding-bottom: 64px;
+    width: 750px;
 }
 
